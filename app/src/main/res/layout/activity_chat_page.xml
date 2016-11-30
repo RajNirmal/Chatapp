@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="@color/background_material_light">
+    <!--
+    android:id="@+id/heading"
+    android:background="@color/background_material_dark"
+    android:weightSum="1"
+    tools:context="${relativePackage}.${activityClass}">-->
+   <!-- <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:color="@color/background_material_dark"
+        android:layout_height="50sp"
+        android:layout_width="fill_parent" />-->
+
+    <ListView
+        android:id="@+id/lvChat"
+        android:background="#9e9e9e"
+        android:transcriptMode="alwaysScroll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btSend"
+        android:touchscreenBlocksFocus="false" />
+
+    <!--<RelativeLayout
+        android:id="@+id/llSend"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_height="wrap_content" >-->
+    <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textColor="@color/primary_dark_material_dark"
+            android:hint="Say Something"
+            android:textColorHint="@color/primary_material_dark"
+            android:imeOptions="actionSend"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/btSend"
+            android:layout_toLeftOf="@+id/btSend" />
+
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:paddingRight="10dp"
+        android:text="send"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>

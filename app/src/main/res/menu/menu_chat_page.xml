@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".about_us"
+    layout="@layout/activity_chat_page">
+    <item
+        android:id="@+id/back"
+        android:title="Back"
+        android:orderInCategory="100"
+        android:icon="@drawable/back"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/exit"
+        android:title="exit"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_name"
+        app:showAsAction="always" />
+
+</menu>
